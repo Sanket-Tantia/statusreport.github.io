@@ -14,7 +14,7 @@ $sql = "INSERT INTO tbl (NAME, EID)
 if($con->query($sql)===TRUE)
 {
 echo "new record inserted successfully";
-echo " <a href='submit.php'> View Result</a>";
+echo " <a href='https://files.000webhost.com/submit.php'> View Result</a>";
 }else{
 echo "Error: ".$sql ."<br>".$con->error;
 }
