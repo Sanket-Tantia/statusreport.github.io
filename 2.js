@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var formatting = function(a){
   b=a.split('/')
   if (parseInt(b[0])<10){
@@ -17,6 +18,22 @@ today+="/";
 if (new Date().getDate() < 10)  { today += '0' + (parseInt(new Date().getMonth())) }
 today+="/";
 today += new Date().getFullYear();
+=======
+
+var formatting = function(a){
+  a = a.replace("/", "-");
+  a = a.replace("/", "-");
+  return a;
+}
+
+
+var today = "";
+today = new Date().getFullYear();
+today+="-";
+if (new Date().getMonth() < 10) { today += '0' + (parseInt(new Date().getMonth())+1) }
+today+="-";
+today+=new Date().getDate();
+>>>>>>> aa42c2b488c66dd5bf8d7e849e6f95a5727ce187
 
 var datepicker = new Datepickk();
 var selected=today;
