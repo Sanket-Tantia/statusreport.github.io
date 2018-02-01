@@ -1,0 +1,79 @@
+/* Style the container with a rounded border, grey background and some padding and margin */
+html{
+background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)),url("bg1.jpg");
+    background-size:cover;
+	 background-attachment: fixed;
+  background-position: center;
+  }
+	
+	.site-heading {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-family: 'Raleway';
+}
+
+.site-heading .site-heading-upper {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.site-heading .site-heading-lower {
+  font-size: 5rem;
+  font-weight: 100;
+  line-height: 3rem;
+  color:#f8f8ff;
+}
+.text-primary {
+  color: #6495ED !important;
+}
+
+#vert{
+	height:100%;
+	float:left;
+}
+
+.container {
+    
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+	width:100%;
+	color:white;
+}
+
+/* Clear floats after containers */
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.container img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/* Increase the font-size of a span element */
+.container span {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
+@media (max-width: 500px) {
+  .container {
+    text-align: center;
+  }
+
+  .container img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
